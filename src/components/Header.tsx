@@ -1,4 +1,4 @@
-import { FC, LegacyRef, Fragment } from 'react';
+import { FC, LegacyRef } from 'react';
 import Search from './Search';
 import '../scss/Header.scss'
 import Navigation from './Navigation';
