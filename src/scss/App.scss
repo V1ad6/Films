@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html, body, #root, .App {
+    min-height: 100vh;
+}
+
+.App {
+    background: linear-gradient(90deg, #241d42, #140064);
+    position: relative;
+}
+
+.container {
+    margin: 0 80px;
+    overflow: visible;
+}
+
+.back, .ahead {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    img {
+        width: 20px;
+        height: 33px;
+        opacity: 0.7;
+        object-fit: cover;
+    }
+}
+
+.back {
+    left: 0;
+
+    img {
+        transform: rotate(180deg) translateY(20px);
+    } 
+}
+
+.ahead {
+    right: 0;
+    transform: translateY(-20px);
+}
+
+@media (max-width: 930px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 0 20px;
+    }
+}

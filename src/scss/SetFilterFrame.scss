@@ -1,0 +1,23 @@
+.set-filter {
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 55px;
+    width: 190px;
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    padding: 7px 15px;
+    border: 1px solid gray;
+    
+    input {
+        width: 100%;
+        border-radius: 7px;
+        padding: 0 5px;
+        border: 1px solid gray;
+    }
+}
+
+.set-filter_visible {
+    display: flex;
+}

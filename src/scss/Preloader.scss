@@ -1,0 +1,127 @@
+.preloader {
+    background: linear-gradient(90deg, #241d42, #140064);
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        margin-bottom: 33px;
+        animation: 20s linear infinite run;
+        position: absolute;
+    }
+
+    h1, h2 {
+        color: white;
+        opacity: 60%;
+        font-weight: 600;
+    }
+
+    h2 {
+        margin-top: 360px;
+    }
+
+    h1 {
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 630px) {
+    .preloader {
+        img {
+            width: 200px;
+            animation: 20s linear infinite run-mob;
+        }
+    
+        h2 {
+            font-size: 17px;
+            margin-top: 300px;
+        }
+    
+        h1 {
+            font-size: 22px;
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes run {
+    0% {
+        transform: rotate(0deg);
+        margin-left: 0%;
+    }
+
+    30% {
+        transform: rotate(360deg);
+        margin-left: 0%;
+    }
+
+    60% {
+        transform: rotate(780deg);
+        margin-left: 150%;
+        margin-top: 0%;
+    }
+
+    61% {
+        margin-left: 150%;
+        margin-top: 150%;
+    }
+
+    62% {
+        transform: rotate(780deg);
+        margin-left: -100%;
+    }
+
+    100% {
+        transform: rotate(1500deg); 
+        margin-top: -150%;
+    }
+}
+
+@keyframes run-mob {
+    0% {
+        transform: rotate(0deg);
+        margin-left: 0%;
+    }
+
+    30% {
+        transform: rotate(360deg);
+        margin-left: 0%;
+    }
+
+    60% {
+        transform: rotate(780deg);
+        margin-left: 170%;
+        margin-top: 0%;
+    }
+
+    61% {
+        margin-left: 170%;
+        margin-top: 400%;
+    }
+
+    62% {
+        transform: rotate(780deg);
+        margin-left: -100%;
+    }
+
+    100% {
+        transform: rotate(1500deg); 
+        margin-top: -300%;
+    }
+}
