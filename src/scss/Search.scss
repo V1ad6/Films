@@ -5,6 +5,7 @@
     overflow: hidden;
     display: flex;
     width: 400px;
+    max-width: 100%;
     height: 100%;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
@@ -26,7 +27,7 @@
     }
 }
 
-.search_mob {
+.search_mob, .search_invisible {
     display: none;
 }
 

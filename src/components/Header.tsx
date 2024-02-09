@@ -2,6 +2,7 @@ import { FC, LegacyRef } from 'react';
 import Search from './Search';
 import '../scss/Header.scss'
 import Navigation from './Navigation';
+import { useTypedSelector } from '../hooks/useTypedSelector';
 
 interface HeaderProps {
     toggleMenu: () => void;

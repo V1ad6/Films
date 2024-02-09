@@ -10,6 +10,7 @@ import Preloader from './components/Preloader';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import FilmPage from './pages/FilmPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -49,6 +50,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage/>}/>
           <Route path='/film' element={<FilmPage/>}/>
+          <Route path='/about' element={<AboutPage/>}/>
         </Routes>
 
         <Footer/>

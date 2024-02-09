@@ -3,18 +3,20 @@
     position: absolute;
     right: 60px;
     top: 55px;
-    width: 190px;
+    width: 260px;
     background-color: white;
-    border-radius: 10px;
-    height: 50px;
-    padding: 7px 15px;
-    border: 1px solid gray;
+    border-radius: 4px;
+    height: 120px;
+    padding: 16px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
     
     input {
         width: 100%;
-        border-radius: 7px;
-        padding: 0 5px;
-        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 0 13px;
+        border: 1px solid rgb(233, 233, 233);
+        font-size: 17px;
+        font-weight: 300;
     }
 }
 

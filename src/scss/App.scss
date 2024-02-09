@@ -9,6 +9,18 @@ html, body, #root, .App {
     min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: #120097;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 16px;
+    background-color: #3300ff;
+    border-radius: 5px;
+    border: solid 3px #120097;
+}
+
 .App {
     background: linear-gradient(90deg, #241d42, #140064);
     position: relative;

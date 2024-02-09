@@ -5,9 +5,9 @@ const Navigation: FC = () => {
     return (  
         <nav>
             <ul>
-                <li><Link to='/' className="tomain">Main</Link></li>
+                <li><Link to='/' className="routingLink">Main</Link></li>
                 <li>Log in</li>
-                <li>About us</li>
+                <li><Link to='/about' className="routingLink">About us</Link></li>
             </ul>
         </nav>
     );
